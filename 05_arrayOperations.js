@@ -1,4 +1,3 @@
-
 /**
  * Utiliser la fonction .map sur le tableau passé en paramètre
  * pour retourner un nouveau tableau avec les valeurs multipliées par 2
@@ -7,9 +6,7 @@
  *   - Les mots clées for, while, do while sont interdits
  *   - les mots clées function et return sont interdits
  *   - Vous ne pouvez pas utiliser de variable
- *
  */
-
  const multiplyByTwo = (array) => array.map((elem) => elem * 2);
 
  /**
@@ -21,10 +18,7 @@
   *   - les mots clées function et return sont interdits
   *   - Vous ne pouvez pas utiliser de variable (autre que l'argument de la fonction)
   */
- 
- const filterNameStartByA = (array) => {
-   array.filter((elem) => elem.startsWith("A"));
- };
+ const filterNameStartByA = (array) => array.filter((elem) => elem.startsWith("A"));
  
  /**
   * Utiliser la fonction .reduce sur le tableau passé en paramètre
@@ -35,7 +29,6 @@
   *   - les mots clées function et return sont interdits
   *   - Vous ne pouvez pas utiliser de variable (autre que l'argument de la fonction)
   */
- 
  const sum = (array) => array.reduce((acc, elem) => acc + elem, 0);
  
  /**
@@ -56,10 +49,9 @@
   *   - les mots clées function et return sont interdits
   *   - Vous ne pouvez pas utiliser de variable (autre que l'argument de la fonction)
   */
- 
  const findUserById = (array, id) => array.find((elem) => elem.id === id).name;
  
- console.log(filterNameStartByA(["a", "b", "A", "d"]));
+ console.log(filterNameStartByA(["Alice", "Bob", "Anastasia", "Derek"]));
  console.log(multiplyByTwo([1, 2, 3, 4, 5]));
  console.log(sum([1, 2, 3, 4, 5]));
  console.log(
